@@ -76,6 +76,9 @@ class Dog
     # 0
   end
 
+  def update
+  end
+
 
 
 
