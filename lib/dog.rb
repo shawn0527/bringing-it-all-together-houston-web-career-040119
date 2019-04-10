@@ -50,10 +50,10 @@ class Dog
 
     # if dog[:id] == nil
     test = DB[:conn].execute('SELECT * FROM dogs WHERE name = ? AND breed = ?', dog[:name], dog[:breed])
-    if !test.empty?
-      dog = Dog.new_from_db(test[0])
-    else
+    if test.empty?
       dog = Dog.create(dog)
+    else
+      dog = Dog.new_from_db(test[0])
     end
     dog
 
