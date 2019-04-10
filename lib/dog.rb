@@ -53,7 +53,7 @@ class Dog
     if test.empty?
       dog = Dog.create(dog)
     else
-      # dog = Dog.new_from_db(test[0])
+      dog = Dog.new_from_db(test[0])
     end
     dog
 
