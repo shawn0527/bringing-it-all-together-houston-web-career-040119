@@ -56,7 +56,7 @@ class Dog
       dog = Dog.new_from_db(test[0])
     end
     dog
-
+    # question about spec.rb
     # binding.pry
     # 0
 
