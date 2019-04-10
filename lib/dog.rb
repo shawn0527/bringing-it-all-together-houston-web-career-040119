@@ -77,6 +77,7 @@ class Dog
   end
 
   def update
+    DB[:conn].execute('INSERT INTO dogs(name, breed) VALUES (?,?)',self.name,self.breed)
   end
 
 
